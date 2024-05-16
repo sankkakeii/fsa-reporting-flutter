@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "703005143523",
+    "project_id": "fsa-reporting-2ed10",
+    "storage_bucket": "fsa-reporting-2ed10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:703005143523:android:6a5951e8dbf42310ccb0d6",
+        "android_client_info": {
+          "package_name": "com.example.fsa_reporting"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFcX___NkCPGZ0orrbNk2PQ7yyfDfRbxA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

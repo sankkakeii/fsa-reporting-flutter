@@ -1,0 +1,45 @@
+name: fsa_reporting
+description: FSA Reporting for Pay with Transfer.
+
+# Prevent accidental publishing to pub.dev.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.2 <3.0.0'
+
+dependencies:
+  csv: ^6.0.0
+  geolocator: ^7.7.0
+  another_flutter_splash_screen: ^1.2.0
+  change_app_package_name: ^1.1.0
+  shared_preferences: ^2.2.3
+  http: ^1.2.1
+  cloud_firestore: ^4.17.0
+  sqflite: ^2.3.3
+  permission_handler: ^11.3.1
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  image_picker: ^1.1.1
+
+  # flutter_gen: any
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Enable generation of localized Strings from arb files.
+  generate: true
+
+  assets:
+    # Add assets from the images directory to the application.
+    - assets/
+    - assets/images/
+    - assets/images/backgrounds/
