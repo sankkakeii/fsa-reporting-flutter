@@ -12,10 +12,10 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String bgImageUrl = "/images/backgrounds/bg.png";
+    String bgImageUrl = "assets/images/backgrounds/bg.png";
 
     return FlutterSplashScreen.fadeIn(
-      duration: const Duration(milliseconds: 5515),
+      duration: const Duration(milliseconds: 2515),
       backgroundColor: Colors.white,
       onInit: () {
         debugPrint("On Init");
@@ -38,7 +38,7 @@ class SplashScreen extends StatelessWidget {
               SizedBox(
                 height: 100,
                 width: 100,
-                child: Image.asset("/images/fsa_logo.png", width: 100, height: 100,),
+                child: Image.asset("assets/images/fsa_logo.png", width: 100, height: 100,),
               ),
               const Text('FSA Report', style: TextStyle(fontSize: 30, color: Color.fromARGB(255, 59, 59, 59), fontWeight: FontWeight.bold),),
             ],

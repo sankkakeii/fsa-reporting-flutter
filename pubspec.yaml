@@ -26,6 +26,8 @@ dependencies:
   image_picker: ^1.1.1
 
   # flutter_gen: any
+  flutter_gen: any
+  intl: any
 dev_dependencies:
   flutter_test:
     sdk: flutter

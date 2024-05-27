@@ -18,7 +18,7 @@ class _LoginState extends State<Login> {
   String email = '';
   String password = '';
   String errorMessage = '';
-  String bgImageUrl = "/images/backgrounds/bg.png";
+  String bgImageUrl = "assets/images/backgrounds/bg.png";
 
   void handleLogin() async {
     try {
@@ -42,8 +42,8 @@ class _LoginState extends State<Login> {
       // Send login request
       final http.Response response = await http.post(
         Uri.parse(
-            'https://proxy.cors.sh/https://fintecgrate.com/xooxoxo/api/fsalogin.php'),
-            // 'https://fintecgrate.com/xooxoxo/api/fsalogin.php'),
+            // 'https://proxy.cors.sh/https://fintecgrate.com/xooxoxo/api/fsalogin.php'),
+            'https://fintecgrate.com/xooxoxo/api/fsalogin.php'),
         headers: <String, String>{
           'Content-Type': 'application/json; charset=UTF-8',
           'x-cors-api-key': 'temp_5cad65143af4adbc1f2df88cd73fe8c6'

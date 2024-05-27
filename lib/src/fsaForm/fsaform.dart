@@ -14,7 +14,7 @@ class FSAForm extends StatefulWidget {
 class _FSAFormState extends State<FSAForm> {
   final _formKey = GlobalKey<FormState>();
   bool isSubmitting = false;
-  String bgImageUrl = "/images/backgrounds/bg.png";
+  String bgImageUrl = "assets/images/backgrounds/bg.png";
   String? name;
   String? contactAddress;
   String? mobile;

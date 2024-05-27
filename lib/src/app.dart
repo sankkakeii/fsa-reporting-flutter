@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
+// import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:fsa_reporting/splash/splash.dart';
 import 'package:permission_handler/permission_handler.dart'; // Import permission_handler package
 
@@ -24,29 +23,38 @@ class MyApp extends StatelessWidget {
       animation: settingsController,
       builder: (BuildContext context, Widget? child) {
         return MaterialApp(
+            initialRoute: SplashScreen.routeName, // Set initial route to login page
+            routes: {
+              SplashScreen.routeName: (context) => const SplashScreen(),
+              Login.routeName: (context) => const Login(),
+              FSAForm.routeName: (context) => const FSAForm(),
+              Registration.routeName: (context) => const Registration(),
+            },
+            debugShowCheckedModeBanner: false,
+
           restorationScopeId: 'app',
-          localizationsDelegates: const [
-            AppLocalizations.delegate,
-            GlobalMaterialLocalizations.delegate,
-            GlobalWidgetsLocalizations.delegate,
-            GlobalCupertinoLocalizations.delegate,
-          ],
-          supportedLocales: const [
-            Locale('en', ''),
-          ],
-          onGenerateTitle: (BuildContext context) =>
-          AppLocalizations.of(context)!.appTitle,
-          theme: ThemeData(),
-          darkTheme: ThemeData.dark(),
-          themeMode: settingsController.themeMode,
-          initialRoute: SplashScreen.routeName, // Set initial route to login page
-          routes: {
-            SplashScreen.routeName: (context) => const SplashScreen(),
-            Login.routeName: (context) => const Login(),
-            FSAForm.routeName: (context) => const FSAForm(),
-            Registration.routeName: (context) => const Registration(),
-          },
-          debugShowCheckedModeBanner: false,
+          // localizationsDelegates: const [
+          //   AppLocalizations.delegate,
+          //   GlobalMaterialLocalizations.delegate,
+          //   GlobalWidgetsLocalizations.delegate,
+          //   GlobalCupertinoLocalizations.delegate,
+          // ],
+          // supportedLocales: const [
+          //   Locale('en', ''),
+          // ],
+          // onGenerateTitle: (BuildContext context) =>
+          // AppLocalizations.of(context)!.appTitle,
+          // theme: ThemeData(),
+          // darkTheme: ThemeData.dark(),
+          // themeMode: settingsController.themeMode,
+          // initialRoute: SplashScreen.routeName, // Set initial route to login page
+          // routes: {
+          //   SplashScreen.routeName: (context) => const SplashScreen(),
+          //   Login.routeName: (context) => const Login(),
+          //   FSAForm.routeName: (context) => const FSAForm(),
+          //   Registration.routeName: (context) => const Registration(),
+          // },
+          // debugShowCheckedModeBanner: false,
         );
       },
     );
